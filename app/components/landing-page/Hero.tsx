@@ -4,6 +4,7 @@ import Input from '../ui/Input'
 import Button from '../ui/Button'
 import UserCard from '../commons/UserCard'
 import TotalVisits from '../commons/TotalVisits'
+import ProjectCard from '../commons/ProjectCard'
 
 const Hero = () => {
   return (
@@ -21,18 +22,20 @@ const Hero = () => {
       </div>
     </div>
     <div className="w-full flex items-center justify-center bg-[radial-gradient(circle_at_50%_50%,#4B2DBB,transparent_55%)]">
-      <div className="relative">
-        <UserCard />
-        <div className="absolute -bottom-[7%] -right-[45%]">
-          <TotalVisits />
+        <div className="relative">
+          <UserCard />
+          <div className="absolute -bottom-[7%] -right-[45%]">
+            <TotalVisits  />
+          </div>
+          <div className="absolute top-[20%] -left-[45%] -z-10">
+            <ProjectCard
+            />
+          </div>
+          <div className="absolute -top-[5%] -left-[55%] -z-10">
+            <ProjectCard
+            />
+          </div>
         </div>
-        <div className="absolute top-[20%] -left-[45%] -z-10">
-          {/* <ProjectCard /> */}
-        </div>
-        <div className="absolute -top-[5%] -left-[55%] -z-10">
-          {/* <ProjectCard /> */}
-        </div>
-      </div>
     </div>
   </div>
   )
