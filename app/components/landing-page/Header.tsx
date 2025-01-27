@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <div className="flex items-center gap-4">
         <Button variant="primary">Minha Página</Button>
-        <Button variant="primary">Sair</Button>
+        <Button variant="ghost">Sair</Button>
       </div>
     </div>
   );
